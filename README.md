@@ -73,7 +73,7 @@ None of the rules that are available with this plugin have additional options wh
     Requires that only imports and definitions come before export statements.
 
 * `max-func-body-len`:
-    Allows the user to define a max length in characters no function can exceed. This rule takes a second argument which indicates the length which no function cannot exceed. The default is 600:
+    Allows the user to define a max length in characters no function can exceed. This rule takes a second argument which indicates the max length which no function can exceed. The default is 600:
     ```json
     {
         "rules": {
