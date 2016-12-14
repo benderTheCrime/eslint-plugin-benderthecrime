@@ -4,6 +4,7 @@
   "author": "Joe Groseclose <@benderTheCrime>",
   "description": "Shareable ESLint plugin",
   "private": false,
+  "license": "MIT",
   "main": "lib/index.js",
   "keywords": [
     "eslint",
@@ -24,7 +25,6 @@
   "bugs": {
     "url": "https://github.com/benderTheCrime/eslint-plugin-benderthecrime/issues"
   },
-  "license": "MIT",
   "dependencies": {
     "requireindex": "^1.1.0"
   },
