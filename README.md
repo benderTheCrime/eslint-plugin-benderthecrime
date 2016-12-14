@@ -100,7 +100,19 @@ None of the rules that are available with this plugin have additional options wh
     Disallows break statements.
 
 * `no-comment`:
-    Disallows comments.
+    Disallows comments. This rule takes an optional second parameter as an object allowing a comment pattern to ignore:
+    ```json
+    {
+        "rules": {
+            "benderthecrime/no-comment": [
+                2,
+                {
+                    "ignorePattern": "eslint-disable|@flow"
+                }
+            ]
+        }
+    }
+    ```
 
 * `no-for-each`:
     Disallows `forEach`:
