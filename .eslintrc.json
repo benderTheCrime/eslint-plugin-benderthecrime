@@ -480,7 +480,7 @@
         "prefer-const": [
             2,
             {
-                "destructuring": "any"
+                "destructuring": "all"
             }
         ],
         "prefer-numeric-literals": 2,
