@@ -2,6 +2,14 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+### [1.2.0] - 2016-28-12
+#### Change
+- Update "no-magic-numbers" ignored numbers. The list now is limited to:
+  - 0
+  - 1
+  - 10
+  - 100
+
 ### [1.1.2] - 2016-23-12
 #### Remove
 - Remove "MethodDefinition" from "max-func-body-len" rule.
