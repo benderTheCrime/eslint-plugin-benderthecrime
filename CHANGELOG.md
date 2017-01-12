@@ -2,6 +2,10 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+### [1.3.0] - 2017-11-01
+#### Add
+- Add definition for rule "prefer-destructuring"
+
 ### [1.2.0] - 2016-28-12
 #### Change
 - Update "no-magic-numbers" ignored numbers. The list now is limited to:
