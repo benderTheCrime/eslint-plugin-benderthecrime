@@ -225,7 +225,12 @@
       "always"
     ],
     "newline-before-return": 2,
-    "newline-per-chained-call": 2,
+    "newline-per-chained-call": [
+      2,
+      {
+        "ignoreChainWithDepth": 2
+      }
+    ],
     "no-alert": 2,
     "no-array-constructor": 2,
     "no-await-in-loop": 2,

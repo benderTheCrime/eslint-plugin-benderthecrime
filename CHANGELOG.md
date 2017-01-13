@@ -2,6 +2,11 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+### [1.3.1] - 2017-11-01
+#### Update
+- "cache-for-loop-length" should respect only "BinaryExpression" types
+- "no-for-each" updated to accept parent expressions of either "CallExpression" or "MemberExpression"
+
 ### [1.3.0] - 2017-11-01
 #### Add
 - Add definition for rule "prefer-destructuring"
