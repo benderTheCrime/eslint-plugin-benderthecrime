@@ -140,6 +140,9 @@ None of the rules that are available with this plugin have additional options wh
 * `no-switch-statement`:
     Disallows switch statements.
 
+* `no-unnecessary-arrow-function`:
+    Disallows the use of arrow functions without the use of "this" in the function body.
+
 * `no-while-loop`:
     Disallows all flavors of while loops.
 
