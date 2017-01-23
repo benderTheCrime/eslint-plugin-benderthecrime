@@ -5,6 +5,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### [1.5.0] - 2017-23-01
 #### Add
 - Add rule for "prefer-promise-reject-errors"
+- Update "object-curly-newline" and "object-property-newline" to allow for only newline properties on "ObjectExpression"
 
 ### [1.4.0] - 2017-13-01
 #### Add
