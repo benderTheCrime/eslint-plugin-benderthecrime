@@ -2,10 +2,13 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+### [1.5.0] - 2017-23-01
+#### Add
+- Add rule for "prefer-promise-reject-errors"
+
 ### [1.4.0] - 2017-13-01
 #### Add
 - Add rule for "no-unnecessary-arrow-function". This rule checks to see if there exists a "ThisExpression" in the checked "ArrowFunctionExpression" and fails if one does not exist.
-
 
 ### [1.3.1] - 2017-11-01
 #### Update

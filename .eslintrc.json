@@ -435,7 +435,17 @@
     ],
     "no-whitespace-before-property": 2,
     "no-with": 2,
-    "object-curly-newline": 0,
+    "object-curly-newline": [
+      2,
+      {
+        "ObjectExpression": {
+          "minProperties": 1
+        },
+        "ObjectPattern": {
+          "multiline": true
+        }
+      }
+    ],
     "object-curly-spacing": [
       2,
       "always"
@@ -443,7 +453,7 @@
     "object-property-newline": [
       2,
       {
-        "allowMultiplePropertiesPerLine": true
+        "allowMultiplePropertiesPerLine": false
       }
     ],
     "object-shorthand": [
@@ -489,6 +499,7 @@
       }
     ],
     "prefer-numeric-literals": 2,
+    "prefer-promise-reject-errors": 2,
     "prefer-rest-params": 2,
     "prefer-spread": 2,
     "prefer-template": 2,
