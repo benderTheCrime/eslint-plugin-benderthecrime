@@ -364,7 +364,8 @@
     "no-restricted-modules": 2,
     "no-restricted-syntax": [
       2,
-      "WithStatement"
+      "WithStatement",
+      "ImportExpression"
     ],
     "no-return-assign": [
       2,

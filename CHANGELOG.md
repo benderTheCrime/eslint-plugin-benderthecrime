@@ -2,6 +2,10 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+### [1.6.0] - 2017-25-01
+#### Add
+- Add "ImportExpression" to "no-restricted-syntax"
+
 ### [1.5.0] - 2017-23-01
 #### Add
 - Add rule for "prefer-promise-reject-errors"
