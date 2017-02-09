@@ -93,7 +93,10 @@
         "allowKeywords": true
       }
     ],
-    "eol-last": 0,
+    "eol-last": [
+      2,
+      "never"
+    ],
     "eqeqeq": [
       2,
       "always",
