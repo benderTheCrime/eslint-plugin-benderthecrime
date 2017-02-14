@@ -1,8 +1,5 @@
 {
   "parser": "babel-eslint",
-  "plugins": [
-    "react"
-  ],
   "parserOptions": {
     "ecmaFeatures": {
       "ecmaVersion": 2017,
@@ -56,7 +53,16 @@
     ],
     "capitalized-comments": 2,
     "class-methods-use-this": 2,
-    "comma-dangle": 2,
+    "comma-dangle": [
+      2,
+      {
+        "arrays": "always-multiline",
+        "objects": "always-multiline",
+        "imports": "always-multiline",
+        "exports": "always-multiline",
+        "functions": "never"
+      }
+    ],
     "comma-spacing": [
       2,
       {
@@ -194,7 +200,7 @@
         "ignoreUrls": true,
         "ignoreComments": false,
         "ignoreTrailingComments": false,
-        "ignorePattern": "^(import.*|const\\s.*\\s=\\srequire.*)"
+        "ignorePattern": "^(import.*|const\\s.*\\s=\\srequire.*)$"
       }
     ],
     "max-lines": [
@@ -511,7 +517,7 @@
       2,
       "as-needed",
       {
-        "keywords": true
+        "keywords": false
       }
     ],
     "quotes": [
@@ -580,6 +586,10 @@
     ],
     "symbol-description": 2,
     "template-curly-spacing": [
+      2,
+      "never"
+    ],
+    "template-tag-spacing": [
       2,
       "never"
     ],

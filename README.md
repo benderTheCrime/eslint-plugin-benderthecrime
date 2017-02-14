@@ -43,6 +43,7 @@ Then configure the rules you want to use under the rules section.
 ```
 
 Additionally, this plugin comes with a recommended configuration, which can be inherited from in your `.eslintrc`:
+
 ```json
 {
     "extends": [
@@ -54,12 +55,27 @@ Additionally, this plugin comes with a recommended configuration, which can be i
 }
 ```
 
+Finally, this plugin comes with an "all" configuration, which will enable all custom rules found in this plugin:
+
+```json
+{
+    "extends": [
+        "plugin:benderthecrime/all"
+    ],
+    "plugins": [
+        "benderthecrime"
+    ]
+}
+```
+
 ## Supported Rules
 None of the rules that are available with this plugin have additional options where they are not specified.
 
 * `cache-for-loop-length`:
+
     Requires that the second clause of the for loop condition reference a variable as opposed to directly referencing the length of a collection:
-    ```JavaScript
+
+    ```javascript
     // BAD
     for (let i = 0; i < arr.length; ++i) {}
 
@@ -70,21 +86,40 @@ None of the rules that are available with this plugin have additional options wh
     ```
 
 * `exports-always-on-top`:
-    Requires that only imports and definitions come before export statements.
 
-* `max-func-body-len`:
-    Allows the user to define a max length in characters no function can exceed. This rule takes a second argument which indicates the max length which no function can exceed. The default is 300:
+    Requires that only imports and definitions come before export statements. This also implies that imports must be defined at the top of the module.
+
+* `limit-object-expression-prop-count`:
+
+    Limits the number of properties allowed in an object literal definition.
+
+    The v8 engine explicitly puts any object with more than 26 properties into slow mode. This is an attempt to hedge the risk of objects being treated as dictionaries in v8. For more information, see the [v8 engine unit tests](https://github.com/v8/v8/blob/d52280b1a7a867ffb350c4f193cf8692861855dd/test/mjsunit/fast-prototype.js "v8 Engine").
+
     ```json
     {
         "rules": {
-            "benderthecrime/max-func-body-len": [ 2, 300 ]
+            "benderthecrime/limit-object-expression-prop-count": [ 2, 15 ]
+        }
+    }
+    ```
+
+* `max-function-body-length`:
+
+    Allows the user to define a max length in characters no function can exceed. This rule takes a second argument which indicates the max length which no function can exceed. The default is 300:
+
+    ```json
+    {
+        "rules": {
+            "benderthecrime/max-function-body-length": [ 2, 300 ]
         }
     }
     ```
 
 * `no-arrow-callback`:
+
     Disallows arrow functions as callbacks:
-    ```JavaScript
+
+    ```javascript
     // BAD
     [1, 2, 3].map(n => n ** 2);
 
@@ -97,10 +132,13 @@ None of the rules that are available with this plugin have additional options wh
     ```
 
 * `no-break`:
+
     Disallows break statements.
 
 * `no-comment`:
+
     Disallows comments. This rule takes an optional second parameter as an object allowing a comment pattern to ignore:
+
     ```json
     {
         "rules": {
@@ -115,8 +153,10 @@ None of the rules that are available with this plugin have additional options wh
     ```
 
 * `no-for-each`:
+
     Disallows `forEach`:
-    ```JavaScript
+
+    ```javascript
     // BAD
     [1, 2, 3].forEach(console.log);
 
@@ -129,25 +169,39 @@ None of the rules that are available with this plugin have additional options wh
     **NOTE: Currently, this rule prevents the use of ANY `forEach` method**
 
 * `no-for-in`:
+
     Disallows "for...in".
 
 * `no-for-of`:
+
     Disallows "for...of".
 
+* `no-generator-functions`:
+
+    Disallows generator functions.
+
+    Generator functions are not currently optimizable by the v8 engine because they potentially have indeterminate end conditions. It may not be a wise decision to use generator functions until they become optimizable.
+
 * `no-require`:
+
     Disallows the use of require to import modules. Instead this rule predicates the use of ES6 style imports.
 
 * `no-switch-statement`:
+
     Disallows switch statements.
 
 * `no-unnecessary-arrow-function`:
+
     Disallows the use of arrow functions without the use of "this" in the function body.
 
 * `no-while-loop`:
+
     Disallows all flavors of while loops.
 
 * `require-jsdoc-on-export`:
+
     Requires JSDoc docstrings only on exports. This rule allows an additional configuration option specifying on which code constructs JSDocs should be required:
+
     ```json
     {
         "rules": {

@@ -2,6 +2,15 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+### [1.8.0] - 2017-13-02
+#### Add/Update/Remove
+- Add "no-generator-functions" rule
+- Add "limit-object-expression-props" rule
+- Change "quote-props" "keywords" option to false
+- Update "comma-dangle" rule configuation
+- Update "benderthecrime/sort-keys" to also check for sorting of named imports/exports
+- Remove "eslint-plugin-react"
+
 ### [1.7.0] - 2017-08-02
 #### Update
 - Enable "eol-last" and set string option to "never"

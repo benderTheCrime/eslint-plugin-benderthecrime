@@ -1,14 +1,20 @@
+# EditorConfig is awesome: http://EditorConfig.org
+
 root = true
 
 [*]
-end_of_line = lf
 charset = utf-8
-trim_trailing_whitespace = true
-insert_final_newline = false
+end_of_line = lf
 indent_style = space
+insert_final_newline = false
+max_line_length = 120
+trim_trailing_whitespace = true
 
-[*.js]
+
+[*.{js,md}]
 indent_size = 4
+tab_width = 4
 
-[*.json]
+[*.{json,yml}]
 indent_size = 2
+tab_width = 2
