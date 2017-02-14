@@ -7,6 +7,13 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Add "no-generator-functions" rule
 - Add "limit-object-expression-props" rule
 - Change "quote-props" "keywords" option to false
+- Deprecated the following custom rules in favor of native alternatives:
+    - "no-break"
+    - "no-for-each"
+    - "no-for-in"
+    - "no-for-of"
+    - "no-switch-statement"
+    - "no-while-loop"
 - Update "comma-dangle" rule configuation
 - Update "benderthecrime/sort-keys" to also check for sorting of named imports/exports
 - Remove "eslint-plugin-react"

@@ -89,6 +89,25 @@ None of the rules that are available with this plugin have additional options wh
 
     Requires that only imports and definitions come before export statements. This also implies that imports must be defined at the top of the module.
 
+
+* `import-occurrence-order`:
+
+    Requires that imports are listed in the order in which they are used. This rule takes an optional second argument which has a property "ignoreImportGroups" which will ignore ordering of import groups separated by a newline:
+
+    ```json
+    {
+        "rules": {
+            "benderthecrime/import-occurrence-order": [
+                2,
+                {
+                    "ignoreImportGroups": false
+                }
+            ]
+        }
+    }
+    ```
+
+
 * `limit-object-expression-prop-count`:
 
     Limits the number of properties allowed in an object literal definition.
@@ -117,6 +136,8 @@ None of the rules that are available with this plugin have additional options wh
 
 * `no-arrow-callback`:
 
+    **DEPRECATED**: Use a combination of the "max-nested-callbacks" and "no-unnecessary-arrow-function" rules
+
     Disallows arrow functions as callbacks:
 
     ```javascript
@@ -132,6 +153,8 @@ None of the rules that are available with this plugin have additional options wh
     ```
 
 * `no-break`:
+
+    **DEPRECATED**: Use "no-restricted-syntax"
 
     Disallows break statements.
 
@@ -154,6 +177,8 @@ None of the rules that are available with this plugin have additional options wh
 
 * `no-for-each`:
 
+    **DEPRECATED**: Use "no-restricted-properties"
+
     Disallows `forEach`:
 
     ```javascript
@@ -170,9 +195,13 @@ None of the rules that are available with this plugin have additional options wh
 
 * `no-for-in`:
 
+    **DEPRECATED**: Use "no-restricted-syntax"
+
     Disallows "for...in".
 
 * `no-for-of`:
+
+    **DEPRECATED**: Use "no-restricted-syntax"
 
     Disallows "for...of".
 
@@ -188,6 +217,8 @@ None of the rules that are available with this plugin have additional options wh
 
 * `no-switch-statement`:
 
+    **DEPRECATED**: Use "no-restricted-syntax"
+
     Disallows switch statements.
 
 * `no-unnecessary-arrow-function`:
@@ -195,6 +226,8 @@ None of the rules that are available with this plugin have additional options wh
     Disallows the use of arrow functions without the use of "this" in the function body.
 
 * `no-while-loop`:
+
+    **DEPRECATED**: Use "no-restricted-syntax"
 
     Disallows all flavors of while loops.
 
