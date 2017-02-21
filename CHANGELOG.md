@@ -2,6 +2,10 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+### [1.10.0] - 2017-21-02
+#### Update
+- Disable "capitalized-comments" for "plugin:benderthecrime/all"
+
 ### [1.9.0] - 2017-18-02
 #### Add/Update/Remove
 - Update "no-comment" "ignorePattern" property to be less specific about eslint comment types

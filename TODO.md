@@ -4,3 +4,4 @@
 [ ] Update custom rule categories
 [x] Add a configuration to enable "all" custom rules
 [ ] Separate sort keys into multiple rules
+[ ] Factor out "allRules" configuration
