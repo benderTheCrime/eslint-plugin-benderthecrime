@@ -2,6 +2,10 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+### [1.11.0] - 2017-27-02
+#### Update
+- Change "limit-object-expression-prop-count" "max" default to 20
+
 ### [1.10.0] - 2017-21-02
 #### Update
 - Disable "capitalized-comments" for "plugin:benderthecrime/all"
