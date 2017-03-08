@@ -2,6 +2,13 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+### [1.12.0] - 2017-08-03
+#### Add/Update
+- Added configuration for the following rules:
+    - "no-compare-neg-zero"
+    - "nonblock-statement-body-position"
+- Update "no-magic-numbers" to ignore -1
+
 ### [1.11.0] - 2017-27-02
 #### Update
 - Change "limit-object-expression-prop-count" "max" default to 20

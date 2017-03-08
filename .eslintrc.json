@@ -248,6 +248,7 @@
     "no-case-declarations": 2,
     "no-catch-shadow": 2,
     "no-class-assign": 2,
+    "no-compare-neg-zero": 2,
     "no-cond-assign": 2,
     "no-confusing-arrow": 2,
     "no-console": 2,
@@ -311,7 +312,9 @@
     "no-magic-numbers": [
       2,
       {
+        "enforceConst": true,
         "ignore": [
+          -1,
           0,
           1,
           10,
@@ -461,6 +464,7 @@
     ],
     "no-whitespace-before-property": 2,
     "no-with": 2,
+    "nonblock-statement-body-position": 2,
     "object-curly-newline": [
       2,
       {
