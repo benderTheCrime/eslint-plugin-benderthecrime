@@ -2,6 +2,10 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+### [1.12.1] - 2017-14-04
+#### Update
+- Update to ESLint to "eslint@^0.19.0"
+
 ### [1.12.0] - 2017-08-03
 #### Add/Update
 - Added configuration for the following rules:
@@ -19,7 +23,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### [1.9.0] - 2017-18-02
 #### Add/Update/Remove
-- Update "no-comment" "ignorePattern" property to be less specific about eslint comment types
+- Update "no-comment" "ignorePattern" property to be less specific about ESLint comment types
 
 ### [1.8.0] - 2017-14-02
 #### Add/Update/Remove
