@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-benderthecrime",
-  "version": "1.12.0",
+  "version": "1.12.1",
   "description": "Shareable ESLint plugin",
   "author": "Joe Groseclose <@benderTheCrime>",
   "private": false,
