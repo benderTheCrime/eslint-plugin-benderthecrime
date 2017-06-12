@@ -25,20 +25,20 @@
   },
   "scripts": {
     "lint:eslint": "./node_modules/.bin/eslint .",
+    "lint:fix": "./node_modules/.bin/eslint . --fix",
     "lint": "npm run lint:eslint",
     "test:mocha": "./node_modules/.bin/mocha test --recursive",
     "test": "npm run test:mocha",
-    "precommit": "./node_modules/.bin/npm-run-series lint:eslint"
+    "precommit": "npm run lint:eslint"
   },
-  "pre-commit": "precommit",
   "dependencies": {
     "requireindex": "^1.1.0"
   },
   "devDependencies": {
-    "babel-eslint": "^7.1.0",
-    "eslint": "^3.19.0",
+    "babel-eslint": "^7.2.3",
+    "eslint": "^4.0.0",
+    "husky": "^0.13.4",
     "mocha": "^3.2.0",
-    "npm-run-series": "^1.0.0",
     "pre-commit": "^1.2.2"
   }
 }
