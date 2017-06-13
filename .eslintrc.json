@@ -23,12 +23,7 @@
       }
     ],
     "array-callback-return": 2,
-    "array-element-newline": [
-      0,
-      {
-        "multiline": true
-      }
-    ],
+    "array-element-newline": 0,
     "arrow-body-style": [
       2,
       "as-needed"
@@ -557,6 +552,15 @@
       },
       {
         "blankLine": "always",
+        "prev": [
+          "const",
+          "let",
+          "var"
+        ],
+        "next": "block-like"
+      },
+      {
+        "blankLine": "always",
         "prev": "*",
         "next": "function"
       },
@@ -567,15 +571,6 @@
           "block-like",
           "multiline-block-like"
         ]
-      },
-      {
-        "blankLine": "always",
-        "prev": [
-          "const",
-          "let",
-          "var"
-        ],
-        "next": "block-like"
       }
     ],
     "prefer-arrow-callback": 0,
