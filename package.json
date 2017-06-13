@@ -1,7 +1,7 @@
 {
   "name": "eslint-plugin-benderthecrime",
-  "version": "1.12.1",
-  "description": "Shareable ESLint plugin",
+  "version": "2.0.0",
+  "description": "shareable eslint plugin",
   "author": "Joe Groseclose <@benderTheCrime>",
   "private": false,
   "license": "MIT",
@@ -19,21 +19,25 @@
     "url": "https://github.com/benderTheCrime/eslint-plugin-benderthecrime/issues"
   },
   "engines": {
-    "node": ">6 <7"
+    "node": ">6",
+    "npm": ">=3.10.8",
+    "yarn": ">=0.23.2"
   },
   "scripts": {
-    "eslint": "./node_modules/.bin/eslint .",
-    "test": "mocha test --recursive"
+    "lint:eslint": "./node_modules/.bin/eslint .",
+    "lint:fix": "./node_modules/.bin/eslint . --fix",
+    "lint": "npm run lint:eslint",
+    "test:mocha": "./node_modules/.bin/mocha test --recursive",
+    "test": "npm run test:mocha",
+    "precommit": "npm run lint:eslint"
   },
-  "pre-commit": [
-    "eslint"
-  ],
   "dependencies": {
     "requireindex": "^1.1.0"
   },
   "devDependencies": {
-    "babel-eslint": "^7.1.0",
-    "eslint": "^3.17.1",
+    "babel-eslint": "^7.2.3",
+    "eslint": "^4.0.0",
+    "husky": "^0.13.4",
     "mocha": "^3.2.0",
     "pre-commit": "^1.2.2"
   }
