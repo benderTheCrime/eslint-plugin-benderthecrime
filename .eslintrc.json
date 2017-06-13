@@ -16,7 +16,14 @@
       2,
       "never"
     ],
+    "array-bracket-newline": [
+      2,
+      {
+        "multiline": true
+      }
+    ],
     "array-callback-return": 2,
+    "array-element-newline": 0,
     "arrow-body-style": [
       2,
       "as-needed"
@@ -110,6 +117,7 @@
         "null": "ignore"
       }
     ],
+    "for-direction": 2,
     "func-call-spacing": 2,
     "func-name-matching": 2,
     "func-names": 2,
@@ -244,6 +252,7 @@
     "no-array-constructor": 2,
     "no-await-in-loop": 2,
     "no-bitwise": 2,
+    "no-buffer-constructor": 2,
     "no-caller": 2,
     "no-case-declarations": 2,
     "no-catch-shadow": 2,
@@ -469,9 +478,11 @@
       2,
       {
         "ObjectExpression": {
+          "consistent": true,
           "minProperties": 1
         },
         "ObjectPattern": {
+          "consistent": true,
           "multiline": true
         }
       }
@@ -513,6 +524,54 @@
     "padded-blocks": [
       2,
       "never"
+    ],
+    "padding-line-between-statements": [
+      2,
+      {
+        "blankLine": "always",
+        "prev": "directive",
+        "next": "*"
+      },
+      {
+        "blankLine": "always",
+        "prev": "import",
+        "next": "export"
+      },
+      {
+        "blankLine": "always",
+        "prev": [
+          "export",
+          "import"
+        ],
+        "next": [
+          "block-like",
+          "const",
+          "let",
+          "var"
+        ]
+      },
+      {
+        "blankLine": "always",
+        "prev": [
+          "const",
+          "let",
+          "var"
+        ],
+        "next": "block-like"
+      },
+      {
+        "blankLine": "always",
+        "prev": "*",
+        "next": "function"
+      },
+      {
+        "blankLine": "always",
+        "prev": "*",
+        "next": [
+          "block-like",
+          "multiline-block-like"
+        ]
+      }
     ],
     "prefer-arrow-callback": 0,
     "prefer-const": [
@@ -567,6 +626,10 @@
         "after": true
       }
     ],
+    "semi-style": [
+      2,
+      "last"
+    ],
     "sort-imports": 0,
     "sort-keys": [
       2,
@@ -604,6 +667,7 @@
       2,
       "never"
     ],
+    "switch-colon-spacing": 2,
     "symbol-description": 2,
     "template-curly-spacing": [
       2,
