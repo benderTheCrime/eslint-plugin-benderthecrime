@@ -1,5 +1,4 @@
 # eslint-plugin-benderthecrime
-
 Shareable ESLint plugin
 
 ## Installation
