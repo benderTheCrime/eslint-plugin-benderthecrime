@@ -5,7 +5,7 @@ Shareable ESLint plugin
 
 You'll first need to install [ESLint](http://eslint.org):
 ```
-npm i eslint --save-dev
+npm i -D eslint
 ```
 
 You will also need the the `babel-eslint` package, which this package uses as
