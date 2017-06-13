@@ -2,13 +2,28 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [2.0.0] - 2017-13-06
+#### Add/Update
+- Add configuration for new ESLint rules:
+    - "array-element-newline"
+    - "semi-style"
+    - "padding-line-between-statements"
+    - "for-direction"
+    - "switch-colon-spacing"
+    - "array-bracket-newline"
+    - "no-buffer-constructor"
+- Add "consistent" flag to the configuration options for "object-curly-newline"
+- Add ESLint fix npm script:
+    `npm run lint:fix`
+- Update to ESLint to "eslint@^4.0.0
+
 ### [1.12.1] - 2017-14-04
 #### Update
-- Update to ESLint to "eslint@^0.19.0"
+- Update to ESLint to "eslint@^3.19.0"
 
 ### [1.12.0] - 2017-08-03
 #### Add/Update
-- Added configuration for the following rules:
+- Add configuration for the following rules:
     - "no-compare-neg-zero"
     - "nonblock-statement-body-position"
 - Update "no-magic-numbers" to ignore -1
