@@ -19,9 +19,9 @@
     "url": "https://github.com/benderTheCrime/eslint-plugin-benderthecrime/issues"
   },
   "engines": {
-    "node": ">6 <7",
+    "node": ">6",
     "npm": ">=3.10.8",
-    "yarn": "0.23.2"
+    "yarn": ">=0.23.2"
   },
   "scripts": {
     "lint:eslint": "./node_modules/.bin/eslint .",
