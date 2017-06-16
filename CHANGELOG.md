@@ -1,6 +1,10 @@
-# Change Log
+## Change Log
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
+
+## [2.0.1] - 2017-16-06
+#### Remove
+- Remove configuration for "array-bracket-newline" until such a time where it becomes more configurable for "ArrayPattern" types versus "ArrayExpression" types.
 
 ## [2.0.0] - 2017-13-06
 #### Add/Update
