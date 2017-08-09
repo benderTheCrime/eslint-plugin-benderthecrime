@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [2.1.0] - 2016-09-08
+#### Add/Remove/Update
+- Add "getter-return" rule configuration
+- Remove "ForOfStatement" from "no-restricted-syntax" rule configuration
+- Update ESLint to 4.4.1
+
 ## [2.0.1] - 2017-16-06
 #### Remove
 - Remove configuration for "array-bracket-newline" until such a time where it becomes more configurable for "ArrayPattern" types versus "ArrayExpression" types.
