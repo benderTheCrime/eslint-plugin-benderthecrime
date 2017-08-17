@@ -232,7 +232,7 @@ None of the rules that are available with this plugin have additional options wh
 
 * `require-jsdoc-on-export`:
 
-    Requires JSDoc docstrings only on exports. This rule allows an additional configuration option specifying on which code constructs JSDocs should be required:
+    Requires JSDoc docstrings only on exports. This rule allows an additional Array configuration option specifying which types of exports to exclude when checking for JSDoc docstrings:
 
     ```json
     {
@@ -240,9 +240,10 @@ None of the rules that are available with this plugin have additional options wh
             "benderthecrime/require-jsdoc-on-export": [
                 2,
                 {
-                  "ClassDeclaration": false,
-                  "FunctionDeclaration": true,
-                  "MethodDefinition": false
+                  "exclude": [
+                      "Literal",
+                      "ObjectExpression"
+                  ]
                 }
             ]
         }
