@@ -5,7 +5,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [2.1.0] - 2017-09-08
 #### Add/Remove/Update
 - Add "getter-return" rule configuration
-- Remove "ForOfStatement" from "no-restricted-syntax" rule configuration
+- Remove "ForInStatement" from "no-restricted-syntax" rule configuration
 - Update ESLint to 4.4.1
 
 ## [2.0.1] - 2017-16-06
