@@ -2,17 +2,22 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [2.1.0] - 2017-09-08
+### [2.2.0] - 2017-02-09
+#### Add/Remove/Update
+- Add "function-paren-newline" rule configuration
+- Update ESLint to 4.6.0
+
+### [2.1.0] - 2017-09-08
 #### Add/Remove/Update
 - Add "getter-return" rule configuration
 - Remove "ForInStatement" from "no-restricted-syntax" rule configuration
 - Update ESLint to 4.4.1
 
-## [2.0.1] - 2017-16-06
+#### [2.0.1] - 2017-16-06
 #### Remove
 - Remove configuration for "array-bracket-newline" until such a time where it becomes more configurable for "ArrayPattern" types versus "ArrayExpression" types.
 
-## [2.0.0] - 2017-13-06
+### [2.0.0] - 2017-13-06
 #### Add/Update
 - Add configuration for new ESLint rules:
     - "array-element-newline"
@@ -27,7 +32,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
     `npm run lint:fix`
 - Update to ESLint to "eslint@^4.0.0
 
-### [1.12.1] - 2017-14-04
+#### [1.12.1] - 2017-14-04
 #### Update
 - Update to ESLint to "eslint@^3.19.0"
 
@@ -84,7 +89,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 #### Add
 - Add rule for "no-unnecessary-arrow-function". This rule checks to see if there exists a "ThisExpression" in the checked "ArrowFunctionExpression" and fails if one does not exist.
 
-### [1.3.1] - 2017-11-01
+#### [1.3.1] - 2017-11-01
 #### Update
 - "cache-for-loop-length" should respect only "BinaryExpression" types
 - "no-for-each" updated to accept parent expressions of either "CallExpression" or "MemberExpression"
@@ -101,11 +106,11 @@ This project adheres to [Semantic Versioning](http://semver.org/).
   - 10
   - 100
 
-### [1.1.2] - 2016-23-12
+#### [1.1.2] - 2016-23-12
 #### Remove
 - Remove "MethodDefinition" from "max-func-body-len" rule.
 
-### [1.1.1] - 2016-21-12
+#### [1.1.1] - 2016-21-12
 #### Update
 - Update prefer const to prefer all destructured variables be declared with const.
 
