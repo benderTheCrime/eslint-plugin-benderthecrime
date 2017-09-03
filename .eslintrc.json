@@ -120,6 +120,10 @@
       2,
       "declaration"
     ],
+    "function-paren-newline": [
+      2,
+      "multiline"
+    ],
     "generator-star-spacing": [
       2,
       {

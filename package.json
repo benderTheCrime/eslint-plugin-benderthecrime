@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-benderthecrime",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "shareable eslint plugin",
   "author": "Joe Groseclose <@benderTheCrime>",
   "private": false,
@@ -36,7 +36,7 @@
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
-    "eslint": "^4.4.1",
+    "eslint": "^4.6.0",
     "husky": "^0.13.4",
     "mocha": "^3.2.0"
   }
