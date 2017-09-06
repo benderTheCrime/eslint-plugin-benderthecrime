@@ -57,13 +57,7 @@
     "class-methods-use-this": 2,
     "comma-dangle": [
       2,
-      {
-        "arrays": "always-multiline",
-        "objects": "always-multiline",
-        "imports": "always-multiline",
-        "exports": "always-multiline",
-        "functions": "never"
-      }
+      "always-multiline"
     ],
     "comma-spacing": [
       2,
