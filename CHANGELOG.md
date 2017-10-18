@@ -2,7 +2,12 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-#### [2.2.0] - 2017-06-09
+### [2.3.0] - 2017-17-10
+#### Add/Update
+- Add "multiline-comment-style" rule configuration
+- Update ESLint to 4.9.0
+
+#### [2.2.1] - 2017-06-09
 #### Fix
 - Fix configuration for rule "comma-dangle"
 
