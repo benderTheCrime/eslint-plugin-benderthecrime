@@ -97,7 +97,7 @@
     ],
     "eol-last": [
       2,
-      "never"
+      "always"
     ],
     "eqeqeq": [
       2,
@@ -337,7 +337,7 @@
       {
         "max": 1,
         "maxBOF": 0,
-        "maxEOF": 0
+        "maxEOF": 1
       }
     ],
     "no-negated-condition": 2,
